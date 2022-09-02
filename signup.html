@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .one{
+                display: flex;
+                margin: 25px;
+            }
+            .name{
+                font-size: 35px;
+                margin-top: 10px;
+                margin-left: 10px;
+                color:#4C99CE;
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .logo{
+                width: 100px;
+                height: 100px;
+                background-color: #B7D43E; 
+            }
+            .uhm{
+                margin-top: -10px;
+            }
+            .stillnav{
+                padding: 30px;
+                font-size: 25px;
+                background-color: #F5F5F5;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .online{
+                width: fit-content;
+                border-bottom: 1.5px solid #CCCCCC;
+                font-size: 25px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin: 25px;
+                font-weight: bold;
+            }
+            .school{
+                margin:20px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            label{
+                font-weight: bold;
+            }
+            .personal{
+                border-bottom: 1px solid #CCCCCC;
+                margin: 0px 20px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            main{
+                margin: 20px 20px 100px 20px;
+               display: flex;
+               justify-content: space-between;
+               flex-wrap: wrap;
+            }
+            label{
+                width: fit-content;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            input{
+                padding: 5px;
+                font-size: 15px;
+            }
+            .input{
+                width: 300px;
+            }
+            .ad{
+                width: 300px;
+                padding: 10px;
+                height: fit-content;
+                border: 1px solid #646060;
+                font-weight: 100;
+                font-size: 15px;
+            }
+            .only{
+                width: 400px;
+                margin-top: 20px;
+            }
+            select, option{
+                padding: 5px;
+                width: 320px;
+                font-size: 15px;
+            }
+            option{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            button{
+                width: 200px;
+                height: 50px;
+                letter-spacing: 2px;
+                padding: 15px;
+                font-size: 22px;
+                color: #4C99CE;
+                background-color: white;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: auto;
+                font-weight: bold;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+                position: relative;
+                z-index: 1;
+                transition: 1s;
+            }
+            button::before{
+                content: "";
+                border-radius: 10px;
+                position: absolute;
+                width: 100px;
+                background: #4C99CE;
+                color: white;
+                width: 0;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all ease-in-out 3s;
+            }
+            button:hover{
+                color: white;
+                border-radius: 10px;
+            }
+            button:hover::before{
+                cursor: pointer;
+                color: white;
+                width: 100%;
+            }
+            /* 
+            button:hover{
+                cursor: pointer;
+                color: white;
+                background-color:  #4C99CE;
+            } */
+            .lally{
+                display: flex;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                justify-content: space-evenly;
+                background-color: #646060;
+                color: white;
+                padding: 20px;
+                margin-top: 50px;
+            }
+            .lone{
+                width: 40%;
+            }
+            .ltwo{
+                width: 40%;
+            }
+            @media (max-width:850px) {
+                .one{
+                display: flex;
+                margin: 10px;
+            }
+            .name{
+                font-size: 20px;
+                margin-top: 2px;
+                margin-left: 10px;
+                color:#4C99CE;
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .logo{
+                width: 60px;
+                height: 60px;
+                background-color: #B7D43E; 
+            }
+            .uhm{
+                margin-top: -10px;
+            }
+            .stillnav{
+                padding: 15px;
+                font-size: 20px;
+                background-color: #F5F5F5;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .online{
+                width: fit-content;
+                border-bottom: 1.5px solid #CCCCCC;
+                font-size: 25px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin: 25px;
+                font-weight: bold;
+            }
+            .school{
+                margin:20px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            label{
+                font-weight: bold;
+            }
+            .personal{
+                border-bottom: 1px solid #CCCCCC;
+                margin: 0px 20px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+                .input{
+                width: 100%;
+            }
+             input{
+                padding: 5px;
+                font-size: 15px;
+                margin-top: 10px;
+            }
+            .only{
+                width: 100%;
+                margin-top: 20px;
+            }
+            select, option{
+                padding: 5px;
+                width: 100%;
+                font-size: 15px;
+            }
+            option{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .lone{
+                width: 40%;
+                font-size: 10px;
+            }
+            .ltwo{
+                width: 40%;
+                font-size: 10px;
+            }
+            }
+           
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="one">
+            <div><a href="signup.html"><img src="university img\art.jpg" alt="" class="logo"></a></div> 
+            <div class="name"><b>Cephas high <div class="uhm">School</div></b></div> 
+        </div>
+        <div class="stillnav">
+        Primary and Secondary School Regisatration form
+        </div>
+    </nav>
+    <section>
+        <div class="online">
+            Online Registration
+        </div>
+        <div class="school">
+            <label for="">School:</label>
+            <div>Cephas High School</div>
+        </div>
+        <div class="personal">
+            Personal details
+        </div>
+       <main >
+        <div class="only"><span style="color: red;">*</span><label for="">
+            Student Name:
+            <div><input type="text" placeholder="Enter Student Name" class="input"></div>
+        </label></div>
+        <div class="only"><span style="color: red;">*</span><label for="">
+            Gender:
+            <div class="input" ><input type="radio" name="lol">Male <input type="radio" name="lol" >Female <input type="radio" name="lol">Custom</div>
+        </label></div>
+        <div class="only"><span style="color: red;">*</span><label for="">
+            Date Of Birth:
+            <div><input type="date" class="input"></div>
+        </label></div>
+        <div class="only"><label for="">
+           Religion:
+            <div><select name="" id="">
+                <option value="">Select Religion</option>
+                <option value="">Christianity</option>
+                <option value="">Islam</option>
+                <option value="">Traditionist</option>
+            </select></div>
+        </label></div>
+        <div class="only"><label for="">
+            Blood Group:
+             <div><select name="" id="">
+                 <option value="">Select Blood Group</option>
+                 <option value="">O+</option>
+                 <option value="">A+</option>
+                 <option value="">B+</option>
+                 <option value="">AB+</option>
+                 <option value="">AB-</option>
+                 <option value="">B-</option>
+                 <option value="">A-</option>
+             </select></div>
+         </label></div>
+         <div class="only"><label for="">
+            Tribe:
+             <div><select name="" id="">
+                 <option value="">Select Tribe</option>
+                 <option value="">Yoruba</option>
+                 <option value="">Igbo</option>
+                 <option value="">Hausa</option>
+             </select></div>
+         </label></div>
+         
+         <div class="only"><span style="color: red;">*</span><label for="">
+            Home Address:
+            <div contenteditable="true" class="ad"></div>
+        </label></div>
+
+        <div class="only"><span style="color: red;">*</span><label for="">
+            Parent/Guardian Phone Number:
+            <div><input type="text" placeholder="Parent/Guardian Phone Number" class="input"></div>
+        </label></div>
+
+        <div class="only"><span style="color: red;">*</span><label for="">
+            Email Address:
+            <div><input type="text" placeholder="Email Address" class="input"></div>
+        </label></div>
+
+        <div class="only"><span style="color: red;">*</span><label for="">
+            Class:
+             <div><select name="" id="" required>
+                 <option value="">Classes</option>
+                 <option value="">Creche</option>
+                 <option value="">kindergarten</option>
+                 <option value="">Nur 1</option>
+                 <option value="">Nur 2</option>
+                 <option value="">Prep</option>
+                 <option value="">Primary 1</option>
+                 <option value="">Primary 2</option>
+                 <option value="">Primary 3</option>
+                 <option value="">Primary 4</option>
+                 <option value="">JSS 1</option>
+                 <option value="">JSS 2</option>
+                 <option value="">JSS 3</option>
+                 <option value="">SSS 1</option>
+                 <option value="">SSS 2</option>
+                 <option value="">SSS 3</option>
+                 <option value="">Prevasity</option>
+             </select></div>
+         </label></div>
+
+         <div class="only"><label for="">
+            Transport mode:
+             <div><select name="" id="">
+                 <option value="">Select Transport mode</option>
+                 <option value="">School Bus</option>
+                 <option value="">Guardian</option>
+                 <option value="">Self Transport</option>
+             </select></div>
+         </label></div>
+         
+         <div class="only"><span style="color: red;">*</span><label for="">
+            Profile Image:
+            <div><input type="file"   class="input"></div>
+        </label></div>
+       </main>
+       <button>SUBMIT</button>
+    </section>
+
+    <footer>
+        <div class="lally">
+            <div class="lone">
+                Copyright 1996 - 2022 | Cephas High School; Developed by Brains Technologies</div>
+
+                <div class="ltwo">
+                    HomeAbout UsContact UsNews & EventsApplication InfoCountinue Education Portal Registration FormLoginPayment Primary & Secondary Portal Primary & Secondary School Registration formPrimary & Secondary LoginPrimary & Secondary Payment Cephaspeters Entrance Exam2022/2023 Entrance Examination
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

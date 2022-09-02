@@ -1,0 +1,272 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4C99CE;
+    height: 115px;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    background-color: #B7D43E; 
+}
+.one{
+    display: flex;
+    width: 40%;
+}
+.name{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: -10px;
+    color: white;
+}
+.uhm{
+    margin-top: -15px;
+}
+.sec{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 70px;
+    font-size: 25px;
+    margin: 70px 30px 0px;
+    margin-left: -100px;
+    padding: 0px 0px 10px 0px;
+    color: white;
+}
+.home{
+    color: #DF9523;
+    font-weight: bolder;
+}
+.sp{
+    padding: 0px 10px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.sp:hover{
+    background-color: #DF9523;
+    color: white;
+}
+.loli{
+    border: 1px solid black;
+}
+.onf{
+    margin-top: 15px;
+    padding: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    display: none;
+}
+.same{
+    width: 37px;
+    background-color: black;
+    margin-top: 5px;
+    height: 4px;
+}
+.down{
+    text-align: left;
+    right: 2px;
+    padding: 5px;
+    background-image: linear-gradient(to right, white , #aaaa);
+    color: #4C99CE;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+}
+.onf:focus-within .down{
+    display: block;
+}
+p:hover{
+    color: #DF9523;
+}
+section{
+    margin-top: 7.7rem;
+    background-image: url(./imgs/boy\ and\ gal.jpg);
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.ui{
+    height:500px ;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.oops{
+    width: 40%;
+    color: white;
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+.fon{
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.wor{
+    margin-top: 20px;
+}
+.en{
+    color: white;
+    border-radius: 5px;
+    margin-right: 50px;
+    background-color: #4C99CE;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+   float: right;
+}
+.oh{
+    background: none;
+    font-size: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.en:hover{
+    background-color: #DF9523;
+}
+
+footer{
+    background-image: linear-gradient(white, #646060);
+}
+.lally{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-evenly;
+    background-image: linear-gradient(white, #646060);
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+}
+.lone{
+    width: 40%;
+}
+.ltwo{
+    width: 40%;
+}
+@media (max-width:820px) {
+    nav{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: #4C99CE;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        width: 99%;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
+        background-color: #B7D43E; 
+    }
+    .one{
+        display: flex;
+        width: 40%;
+    }
+    .name{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 5px;
+        color: white;
+    }
+    .uhm{
+        margin-top: -5px;
+    }
+    .sec{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        display: none;
+        font-size: 25px;
+        margin: 50px 30px 0px;
+        margin-left: -100px;
+        padding: 0px 0px 10px 0px;
+        color: white;
+    }
+    .home{
+        color: #DF9523;
+        font-weight: bolder;
+    }
+    .sp{
+        padding: 0px 10px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .sp:hover{
+        background-color: #DF9523;
+        color: white;
+    }
+    .onf{
+        display: block;
+    }
+    main{
+        display: none;
+    }
+    section{
+        display: block;
+    }
+}
+@media (max-width:550px) {
+    section{
+        display: block;
+        margin-top: 4.9rem;
+    }
+    .fon{
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .oops{
+        width: 50%;
+        color: white;
+        padding: 20px;
+        width: 70%;
+    }
+    .wor{
+        margin-top: 20px;
+    }
+    .en{
+        margin-right: 10px;
+    }
+    .name{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 2px;
+        color: white;
+    }
+    .uhm{
+        margin-top: -1px;
+    }
+    .one{
+        width: 60%;
+    }
+    .lone, .ltwo{
+        font-size: 10px;
+    }
+}

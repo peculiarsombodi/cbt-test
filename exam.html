@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exam.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap-reboot.min.css">
+    <title>BRAINNY QUIZ</title>
+</head>
+
+<body>
+    <main>
+        <div class="enbody">
+            <nav>
+                <div class="one">
+                    <div class="name"><b>PECULIAR <div class="uhm">BRAIN &#127775</div></b></div>
+                </div>
+                <div id="time">
+                    <span id="minute">00</span>
+                    :
+                    <span id="second">00</span>
+                </div>
+            </nav>
+
+            <section>
+
+                <aside id="aside">
+                    <div id="cardy" class="cardy">
+                        <div class="words">
+                            This is just to test our General Knowledge and current affairs.You have 20seconds
+                            to
+                            answer all question.
+                            <div>Your time start after clicking <b>START QUIZ</b></div>
+                        </div>
+                        <div class="footer">
+                            <div><button class="pre">Previous</button></div>
+                            <div><button onclick="start()" class="nexty">START QUIZ</button></div>
+                        </div>
+                    </div>
+
+                    <div id="card" class="card">
+                        <div class="head">Question one</div>
+                        <div class="quest">The Founder of Facebook is ?</div>
+                        <div id="answer" class="option">
+                            <div><button onclick="incorrect()" id="incorrect_one" class="options">Neil
+                                    Armstrong</button>
+                            </div>
+                            <div><button onclick="incorrect()" id="incorrect_two" class="options">Robert Hook</button>
+                            </div>
+                            <div><button onclick="correctOne()" id="correct_one" class="options">Mark zukerberg</button>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div><button class="pre">Previous</button></div>
+                            <div><button onclick="next()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div class="card_two" id="cardTwo">
+                        <div class="head">Question Two</div>
+                        <div class="quest">Who's the minister of petroleum ?</div>
+                        <div class="option">
+                            <div><button onclick="buhar()" id="buhari" class="options">President Mohammadu
+                                    Buhari</button>
+                            </div>
+                            <div><button onclick="chef()" id="cheif" class="options">Cheif Timipre Sylva</button></div>
+                            <div><button onclick="buhar()" id="doctor" class="options">Dr. Adeleke Mamora</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preTwo()" class="prev">Previous</button></div>
+                            <div><button onclick="nextTwo()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+
+                    <div id="cardThree" class="card_three">
+                        <div class="head">Question Three</div>
+                        <div class="quest">Which is heavier between 50kg of feather and 50kg of cement ?</div>
+                        <div class="option">
+                            <div><button onclick="cement()" id="cement" class="options">Cement</button></div>
+                            <div><button onclick="cement()" id="cemen" class="options">feather</button></div>
+                            <div><button onclick="boths()" id="bot" class="options">Both</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preThree()" class="prev">Previous</button></div>
+                            <div><button onclick="nextThree()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div id="cardFour" class="card_four">
+                        <div class="head">Question Four</div>
+                        <div class="quest">The highest building in Nigeria ?</div>
+                        <div class="option">
+                            <div><button onclick="cocoa()" id="cocoa" class="options">Cocoa House</button></div>
+                            <div><button onclick="cocoa()" id="telecom" class="options">TELECOM House </button></div>
+                            <div><button onclick="necom()" id="necom" class="options">NECOM House</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preFour()" class="prev">Previous</button></div>
+                            <div><button onclick="nextFour()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+
+                    <div id="cardFive" class="card_five">
+                        <div class="head">Question Five</div>
+                        <div class="quest">What's the full meaning of SQI ?</div>
+                        <div class="option">
+                            <div><button onclick="soft()" id="softs" class="options">SOFT QUEST INCOPERATED</button>
+                            </div>
+                            <div><button onclick="hard()" id="harder" class="options">SOFTWARE QUESTION INFORMATION
+                                </button></div>
+                            <div><button onclick="hard()" id="harders" class="options">SOLUTION to QUESTION on
+                                    INTERFACES</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preFive()" class="prev">Previous</button></div>
+                            <div><button onclick="nextFive()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div id="cardSix" class="card_six">
+                        <div class="head">Question Six</div>
+                        <div class="quest">How many Geo-political zone are in Nigeria?</div>
+                        <div class="option">
+                            <div><button onclick="five()" id="five" class="options">5</button></div>
+                            <div><button onclick="five()" id="three" class="options">3 </button></div>
+                            <div><button onclick="six()" id="six" class="options">6</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preSix()" class="prev">Previous</button></div>
+                            <div><button onclick="nextSix()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div id="cardSeven" class="card_seven">
+                        <div class="head">Question Seven</div>
+                        <div class="quest">What's the source of human energy ?</div>
+                        <div class="option">
+                            <div><button onclick="best()" id="best" class="options">Carbohydrate</button></div>
+                            <div><button onclick="good()" id="better" class="options">Sun</button></div>
+                            <div><button onclick="good()" id="good" class="options">Fats and oil</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preSeven()" class="prev">Previous</button></div>
+                            <div><button onclick="nextSeven()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div id="cardEight" class="card_eight">
+                        <div class="head">Question Eight</div>
+                        <div class="quest">Fiction can simply means ?</div>
+                        <div class="option">
+                            <div><button onclick="fact()" id="fact" class="options">Fake</button></div>
+                            <div><button onclick="fake()" id="fk" class="options">friction</button></div>
+                            <div><button onclick="fake()" id="fake" class="options">Fact</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preEight()" class="prev">Previous</button></div>
+                            <div><button onclick="nextEight()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div id="cardNine" class="card_nine">
+                        <div class="head">Question Nine</div>
+                        <div class="quest">Laptops was invented by who ?</div>
+                        <div class="option">
+                            <div><button onclick="en()" id="eng" class="options">Engineer Manny Fernandez</button></div>
+                            <div><button onclick="no()" id="job" class="options">Steve Jobs</button></div>
+                            <div><button onclick="no()" id="philo" class="options">Philo Taylor Farnsworth ||</button>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preNine()" class="prev">Previous</button></div>
+                            <div><button onclick="nextNine()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div id="cardTen" class="card_ten">
+                        <div class="head">Question Ten</div>
+                        <div class="quest">Dublin is the capital of ?</div>
+                        <div class="option">
+                            <div><button onclick="land()" id="ice" class="options">Iceland</button></div>
+                            <div><button onclick="land()" id="mal" class="options">Malaysia</button></div>
+                            <div><button onclick="ire()" id="ire" class="options">Ireland</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preTen()" class="prev">Previous</button></div>
+                            <div><button onclick="nextTen()" class="next">Next</button></div>
+                        </div>
+                    </div>
+
+                    <div id="cardBonus" class="card_bonus">
+                        <div class="head">Bonus</div>
+                        <div class="quest">When is Mr.Henshaw birthday ?</div>
+                        <div class="option">
+                            <div><button onclick="sep()" id="manu" class="options">Sept.16</button></div>
+                            <div><button onclick="sept()" id="man" class="options">Sept.12</button></div>
+                            <div><button onclick="sep()" id="ma" class="options">Sept.20</button></div>
+                        </div>
+                        <div class="footer">
+                            <div><button onclick="preBonus()" class="prev">Previous</button></div>
+                            <div><button onclick="nextBonus()" class="next">Finish</button></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div id="cardScore" class="score">
+                    <div class="lang">SCORE : &nbsp;</div>
+                    <div class="box">
+                        <div id="score">
+
+                        </div>
+                        <div class="slash"></div>
+                        <div class="total">10</div>
+                    </div>
+                    <a href="exam.html">
+                        <div><button class="bug">Try Again</button></div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="exam.js"></script>
+
+</html>
